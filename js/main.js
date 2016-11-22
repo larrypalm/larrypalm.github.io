@@ -5,5 +5,14 @@ $(document).ready(function(){
 	});
 
 
+	$("#hide").hide();
+
+
+
+	$("#show").click(function(){
+		$("#hide").slideToggle("slow",function(){
+			
+		});	
+	});
 
 });

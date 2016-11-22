@@ -10,34 +10,34 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="navbar">
 	<!--navbar-->
 	<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
-		<div class="container">
-		  <ul class="nav navbar-nav">
+		<div id="navbar" class="container">
+		  <ul class="nav navbar-nav" role="tablist">
 		    <li class="nav-item ">
-		      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      <a class="nav-link" href="#">Hem<span class="sr-only">(current)</span></a>
 		    </li>
 		    <li class="nav-item">
-		      <a class="nav-link" href="#">Features</a>
+		      <a class="nav-link" href="#">Skills</a>
 		    </li>
 		    <li class="nav-item">
-		      <a class="nav-link" href="#">Pricing</a>
+		      <a class="nav-link" href="#">Om</a>
 		    </li>
 		    <li class="nav-item">
-		      <a class="nav-link" href="#">About</a>
+		      <a class="nav-link" href="#">CV</a>
 		    </li>
 		  </ul>
 		</nav>
 	</div>
 	<!--/navbar-->
 	<!--jumbotron-->
-	<div class="jumbotron jumbotron-fluid">
+	<div id="home" class="jumbotron jumbotron-fluid">
 		<div class="container text-sm-center">
 		  <h1 id="gustavpalm" class="display-3 py-3">Gustav Palm</h1>
-		  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		  <p class="lead"><strong>Aspiring Frontend Developer</strong></p>
 		  <hr class="my-2">
-		  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+		 
 		  <p class="lead">
 		    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 		  </p>
@@ -89,7 +89,7 @@
 		<!--/kunskaper-->
 		<hr>
 		<!--Om-->
-		<div class="container pt-3 text-sm-center">
+		<div id="about"class="container pt-3 text-sm-center">
 			<h1 class="text-sm-center pb-1"><strong>Om Gustav:</strong></h1>
 			<img src="img/gustav.jpg" alt="Gustav" class="rounded-circle">
 			<div class="row py-3">
@@ -110,18 +110,22 @@
 			<div class="row">
 				<hr class="pb-3">
 				<h1 class="text-sm-center pb-3">Curriculum vitae:	</h1>
-				<div class="list-group">
-				  <a class="list-group-item list-group-item-action">
-				    <h5 class="list-group-item-heading">List group item heading</h5>
-				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				<div class="row" class="list-group">
+				  <a id="show" class="list-group-item list-group-item-action">
+				  <h3>Eftergymnasial utbildning</h3>
+				  <div id="hide">
+				
+				  	<hr>
+				    <h5 class="list-group-item-heading my-1">Människa- och Systemvetenskap (Kandidat)</h5>
+				    <p class="list-group-item-text">Göteborgs Universitet 2013-2016</p>
+				    <hr>
+				    <h5 class="list-group-item-heading my-1">Nationalekonomi (Kurs)</h5>
+				    <p class="list-group-item-text">Göteborgs Universitet 2012-2013</p>
+				    <hr>
+				    <h5 class="list-group-item-heading my-1">Statistisk Grundkurs (Kurs)</h5>
+				    <p class="list-group-item-text">Göteborgs Universitet 2012-2013</p>
+				 	</div>
 				  </a>
-				  <button id="list1">Tjo</button>
-				  <div id="accordion">
-					  <h1>Hej</h1>
-					  <div>
-					  	<p>LOL</p>
-					  </div>
-					</div>
 				  <a class="list-group-item list-group-item-action">
 				    <h5 class="list-group-item-heading">List group item heading</h5>
 				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
@@ -150,7 +154,6 @@
 			</div>
 		</div>
 		<!--/social media-->
-
 
 		<!--footer-->
 		<footer class="pt-3">
