@@ -11,8 +11,11 @@ $(document).ready(function(){
 
 	$("#show").click(function(){
 		$("#hide").slideToggle("slow",function(){
-			
+
 		});	
 	});
-
+	//init. tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
 });
