@@ -2,7 +2,7 @@
 	font-family: 'Bungee Shade', cursive;
 }
 
-@media (max-width: 544px){
+@media (max-width: 544px){ 
 
 	#html, #css, #js {
 
@@ -22,5 +22,7 @@
 		padding: 10px;
 
 	}
+
+
 
 }
