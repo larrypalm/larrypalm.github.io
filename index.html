@@ -47,10 +47,11 @@
 		  <h1 id="gustavpalm" class="display-3 py-3">Gustav Palm</h1>
 		  <p class="lead"><strong>Aspiring Frontend Developer</strong></p>
 		  <hr class="my-2">
-		 
-		  <p class="lead">
-		    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-		  </p>
+
+			<div class="btn-group mt-2" role="group" aria-label="Basic example">
+		  	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Hör av dig!</button>
+		  </div>		 
+
 	  </div>
 	</div>
 	<!--/jumbotron-->
@@ -124,33 +125,51 @@
 				<!--utbildning-->
 				<div class="list-group">
 				  <a class="list-group-item list-group-item-action">
-				  <button id="show" class="btn btn-primary float-xs-right" data-toggle="tooltip" data-placement="top" title="Tryck här för att expandera!">Tryck här!</button>
-				  <h3 class="text-sm-center">Utbildning</h3>
-				  <div id="hide">
-				  	<hr>
-				    <h5 class="list-group-item-heading my-1">JavaScriptutvecklare - Frontend</h5>
-				    <p class="list-group-item-text">Lernia</p>
-				    <p></p>
+					  <button class="show btn btn-primary float-xs-right" data-toggle="tooltip" data-placement="top" title="Tryck här för att expandera!">Tryck här!</button>
+					  <h3 class="text-sm-center">Utbildning</h3>
+					  <div class="hide">
+					  	<hr>
+					    <h5 class="list-group-item-heading my-1">JavaScriptutvecklare - Frontend</h5>
+					    <p class="list-group-item-text">Lernia</p>
 
-				    <hr>
-				    <h5 class="list-group-item-heading my-1">Kandidat Människa- och Systemvetenskap</h5>
-				    <p class="list-group-item-text">Göteborgs Universitet</p>
-				    <p class="text-muted">September 2013 - Juni 2016</p>
+					    <hr>
+					    <h5 class="list-group-item-heading my-1">Kandidat Människa- och Systemvetenskap</h5>
+					    <p class="list-group-item-text">Göteborgs Universitet</p>
+					    <p class="text-muted">September 2013 - Juni 2016</p>
 
-				    <hr>
-				    <h5 class="list-group-item-heading my-1">Nationalekonomi (Kurs)</h5>
-				    <p class="list-group-item-text">Göteborgs Universitet 2012-2013</p>
-				    <hr>
-				    <h5 class="list-group-item-heading my-1">Statistisk Grundkurs (Kurs)</h5>
-				    <p class="list-group-item-text">Göteborgs Universitet 2012-2013</p>
-				 	</div>
+					    <hr>
+					    <h5 class="list-group-item-heading my-1">Nationalekonomi (Kurs)</h5>
+					    <p class="list-group-item-text">Göteborgs Universitet 2012-2013</p>
+					    <hr>
+					    <h5 class="list-group-item-heading my-1">Statistisk Grundkurs (Kurs)</h5>
+					    <p class="list-group-item-text">Göteborgs Universitet 2012-2013</p>
+					 	</div>
 				  </a>
-				  <!--/eftergymnasial-->
+				  <!--/utbildning-->
 				  <!--Arbetserfarenhet-->
 				  <a class="list-group-item list-group-item-action">
-				    <h5 class="list-group-item-heading">List group item heading</h5>
-				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					  <button class=" show1 btn btn-primary float-xs-right" data-toggle="tooltip" data-placement="top" title="Tryck här för att expandera!">Tryck här!</button>
+					  <h3 class="text-sm-center">Arbetslivserfarenheter</h3>
+					  <div class="hide1">
+					  	<hr>
+					    <h5 class="list-group-item-heading my-1">JavaScriptutvecklare - Frontend</h5>
+					    <p class="list-group-item-text">Lernia</p>
+
+					    <hr>
+					    <h5 class="list-group-item-heading my-1">Kandidat Människa- och Systemvetenskap</h5>
+					    <p class="list-group-item-text">Göteborgs Universitet</p>
+					    <p class="text-muted">September 2013 - Juni 2016</p>
+
+					    <hr>
+					    <h5 class="list-group-item-heading my-1">Nationalekonomi (Kurs)</h5>
+					    <p class="list-group-item-text">Göteborgs Universitet 2012-2013</p>
+					    <hr>
+					    <h5 class="list-group-item-heading my-1">Statistisk Grundkurs (Kurs)</h5>
+					    <p class="list-group-item-text">Göteborgs Universitet 2012-2013</p>
+					 	</div>
 				  </a>
+				  <!--/Artbetserfarenhet-->
+
 				  <a class="list-group-item list-group-item-action">
 				    <h5 class="list-group-item-heading">List group item heading</h5>
 				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
@@ -164,61 +183,96 @@
 		<div id="social" class="container">
 			<div class="row">
 				<div class="col-sm-4">	
-					<button class="btn btn-block btn-primary btn-lg"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</button>
+					<a href="https://www.facebook.com/gustav.palm"><button class="btn btn-block btn-primary btn-lg"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</button></a>
 				</div>
 				<div class="col-sm-4">
-					<button class="btn btn-block btn-primary btn-lg"><i class="fa fa-github" aria-hidden="true"></i> GitHub</button>
+					<a href="https://github.com/larrypalm"><button class="btn btn-block btn-primary btn-lg"><i class="fa fa-github" aria-hidden="true"></i> GitHub</button></a>
 				</div>
 				<div class="col-sm-4">
-					<button class="btn btn-block btn-primary btn-lg"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</button>
+					<a href="https://www.linkedin.com/in/gustav-palm-53393a114?trk=nav_responsive_tab_profile"><button class="btn btn-block btn-primary btn-lg"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</button></a>
 				</div>
 			</div>
 		</div>
 		<!--/social media-->
 
-		<!--footer-->
-		<footer class="pt-3">
-			© 2016 Gustav Palm
-		</footer>
-		<!--/footer-->
-
-		<form class="form-input">
-			<div class="container">
-				<fieldset>
-
-					<legend>Contact Information:</legend>
-					<p>
-						<label>First Name</label>
-						<input type="text" placeholder="Enter Username">
-					</p>
-
-					<p>
-						<label>Last Name</label>
-						<input type="text">
-					</p>
-
-				</fieldset>
-				</br>
-				<fieldset>
-					<legend>Please tell me what youre favourite PL team is!</legend>
-					<input type="checkbox">
-					<label>Liverpool</label>
-					<input type="checkbox">
-					<label>Sunderland</label>
-					<input type="checkbox">
-					<label>Leeds</label>										
-				</fieldset>
-			</div>
-		</form>
 
 
+		<!--=================================
+			MODAL
+		==================================-->
+		<div class="modal fade" id="myModal" >
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header bg-primary">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		        <h4 class="modal-title">Kontakta mig!</h4>
+		      </div>
+		      <div class="modal-body">
+		      <!-- register form -->
+					<div id="observe" class="alert alert-warning alert-dismissible fade in" role="alert">
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					    <span aria-hidden="true">&times;</span>
+					  </button>
+					  <strong>Sorry!</strong> Detta är dessvärre bara en Dummy-formulär. Den fungerar riktigt ännu. Kul att du ändå kom så här långt!
+					</div>		        
+				<form class="form-group">
+					<h5 id="formHeader" class="mb-2"></h5>
+				  <div class="form-group">
+				    <label id="name" for="name">Förnamn:</label>
+				    <input type="text" class="form-control">
+				  </div>
+				  <div class="form-group">
+				    <label id="lastname" for="name">Efternamn:</label>
+				    <input type="text" class="form-control">
+				  </div>				  
+				  <div class="form-group">
+				    <label for="mail">Email:</label>
+				    <input type="email" class="form-control" id="mail" >
+				  </div>
+				    <label id="question">Vad handlar din fråga om?</label>
+				    <select class="form-control" id="role" name="user_role">
+				    	<option value="HTML">HTML</option>
+				    	<option value="CSS">CSS</option>
+				    	<option value="JavaScript">JavaScript</option>
+				    	<option value="Git">Git</option>
+				    	<option value="jQuery">jQuery</option>
+				    	<option value="Responsive Web Design">Responsive Web Design</option>
+				    	<option value="AJAX">AJAX</option>
+				    	<option value="JSON">JSON</option>
+				    	<option value="GUI/Interaktionsdesign">GUI/Interaktionsdesign</option>
+				    	<option value="Skiss/mockups">Skiss/mockups</option>
+				 	</select>
+				  <div class="form-group mt-1">
+				    <label id="questionForm">Fråga:</label>
+				    <input type="text" class="form-control" id="question">
+
+				  </div>					 		
+				</form>		        
+
+		    </div>
+		    <div class="modal-footer">
+		      <button id="send" type="button" class="btn btn-primary">Skicka!</button>
+		      <button id="cancel" type="button" class="btn btn-secondary" data-dismiss="modal">Avbryt</button>
+		    </div>
+		  </div>
+	  </div>
+		</div>		
 
 	</div>
 
-
- 
-
-
+		<!--footer-->
+		<div class="container-fluid">
+			<div class="row">
+				<footer class="col-xs-12 pt-3">
+					<a class="flags" id="gb-flag" href="#" onclick="toEnglish()"><img src="img/gb-flag.jpg"></a>
+					<a class="flags" id="swe-flag" href="#" onclick="toSwedish()"><img src="img/swe-flag.png"></a>	
+					<p>© 2016 Gustav Palm</p>
+				</footer>
+			</div>
+		</div>
+		<!--/footer-->	
 
 
 

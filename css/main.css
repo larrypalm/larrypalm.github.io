@@ -32,18 +32,47 @@
 }
 
 /*/////////////////////////////////
+	CV
+/////////////////////////////////*/
+
+.hide, .hide1 {
+	display: none;
+}
+
+/*/////////////////////////////////
 	Form
 /////////////////////////////////*/
 
-button {
-	margin-bottom:10px;
+.modal-title {
+	color: #fff;
 }
 
-input {
-	height: 45px;
-	width: 300px;
-	font-size: 18px;
-	margin-bottom: 20px:;
-	background-color: #fff;
-	padding-left: 10px;
+.form-group input:focus {
+	  outline: none;
+    border: 1px solid #0040ff;
+    transition: border .5s linear;
+    -webkit-transition: border .5s linear;
+    -moz-transition: border .5s linear;
+    -o-transition: border .5s linear;
+
+} 
+
+#formHeader {
+	text-align: center;
 }
+
+
+/*/////////////////////////////////
+	Footer
+/////////////////////////////////*/
+
+footer {
+	background:#323233;
+	color: #fff;
+	text-align: center;
+}
+
+#swe-flag {
+	display: none;
+}
+	
