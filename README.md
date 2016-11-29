@@ -3,9 +3,9 @@
 This is the final projekt done by student Gustav Palm for the YHJUST16 course at Lernia Yrkeshögskola.
 
 The technologies used to complete this project are following:
-<ol>
+<ul>
 	<li>HTML5 & CSS</li>
 	<li>Bootstrap</li>
 	<li>jQuery</li>
 	<li>JavaScript</li>
-</ol>
+</ul>
