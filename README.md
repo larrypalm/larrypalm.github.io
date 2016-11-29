@@ -12,4 +12,7 @@ This is the final projekt done by student Gustav Palm for the course "HTML, CSS,
 
 Please bare with me, I'm still learning alot as well as enjoying this alot! Hope you guys enjoy!
 
-/Gustav 
+/Gustav
+
+Link to my LinkedIn profile: <a href="https://www.linkedin.com/in/gustav-palm-53393a114?trk=nav_responsive_tab_profile 
+">Gustav Palm</a>
