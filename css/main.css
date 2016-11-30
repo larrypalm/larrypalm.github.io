@@ -1,9 +1,15 @@
 #gustavpalm {
 	font-family: 'Bungee Shade', cursive;
+	font-size: 10em;
 }
 
 @media (max-width: 544px){ 
 
+	#gustavpalm {
+	font-family: 'Bungee Shade', cursive;
+
+}
+	
 	#html, #css, #js {
 
 		display: none;
@@ -82,9 +88,8 @@
 }
 
 /*---------------------------------
-	Footer
+	Socialmedia
 ---------------------------------*/
-
 
 
 /*---------------------------------

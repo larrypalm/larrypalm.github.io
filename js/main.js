@@ -14,8 +14,8 @@ $(document).ready(function(){
 	});
 	$("#html, #css, #js").mouseleave(function(){
 		$(this).animate({
-			opacity:1
-		}, 200, function(){
+				opacity:1
+			}, 200, function(){
 
 		});
 	});	
@@ -73,9 +73,18 @@ $(document).ready(function(){
 	  $('[data-toggle="tooltip"]').tooltip()
 	})
 
-});
+  /*--------------------------------
+  	Social media
+  --------------------------------*/
+
+  $("#fb, #github, #linkedin").css("text-decoration", "none");
+
+});	
 
 //JavaScript
+function changeRed() {
+	document.getElementById("gustavpalm").style.color = "red";
+} 
 
 function toEnglish() {	
 	document.getElementById("observe").innerHTML = "<strong>Sorry!</strong> This is only a Dummy-form. It doesn't work, yet. I appreciate you've come this far though!";
@@ -85,7 +94,12 @@ function toEnglish() {
   document.getElementById("questionForm").innerHTML = "Question:";
   document.getElementById("send").innerHTML = "Send!";
   document.getElementById("cancel").innerHTML = "Cancel";
-  alert("The language was changed to English");
+	swal({
+		title: "The language is set to English",
+	  confirmButtonColor: "#428bca",
+	  confirmButtonText: "Close",
+		closeOnConfirm: true
+	});
 }
 
 function toSwedish() {
@@ -96,12 +110,16 @@ function toSwedish() {
   document.getElementById("questionForm").innerHTML = "Fråga:";
   document.getElementById("send").innerHTML = "Skicka!";
   document.getElementById("cancel").innerHTML = "Avbryt";
-  alert("Språket är ändrat till svenska");
+	swal({
+		title: "Språket ändrades till Svenska",
+	  confirmButtonColor: "#428bca",
+	  confirmButtonText: "Stäng",
+		closeOnConfirm: true
+	});
 }
 
 function send(){
 	$("#send").on("click", function(){
-		//var name = document.getElementById("inputName").value;
 		swal({
 		  title: "Är du säker?",
 		  text: "You will not be able to recover this imaginary file!",
@@ -115,7 +133,6 @@ function send(){
 
 function cancel(){
 	$("#cancel").on("click", function(){
-		//var name = document.getElementById("inputName").value;
 		swal({
 		  title: "Är du säker?",
 		  text: "You will not be able to recover this imaginary file!",
