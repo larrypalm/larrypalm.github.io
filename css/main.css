@@ -30,30 +30,46 @@
 
 
 }
+/*---------------------------------
+	About
+---------------------------------*/
 
-/*/////////////////////////////////
+#gustav {
+	border: 5px solid #3366ff;
+}
+
+/*---------------------------------
+	Skills
+---------------------------------*/
+
+#html:hover {
+	opacity: 0.75;
+}
+
+
+/*---------------------------------
 	CV
-/////////////////////////////////*/
+---------------------------------*/
 
 .hide, .hide1 {
 	display: none;
 }
 
-/*/////////////////////////////////
+/*---------------------------------
 	Form
-/////////////////////////////////*/
+---------------------------------*/
 
 .modal-title {
 	color: #fff;
 }
 
 .form-group input:focus {
-	  outline: none;
-    border: 1px solid #0040ff;
-    transition: border .5s linear;
-    -webkit-transition: border .5s linear;
-    -moz-transition: border .5s linear;
-    -o-transition: border .5s linear;
+	outline: none;
+  border: 1px solid #0040ff;
+  transition: border .5s linear;
+  -webkit-transition: border .5s linear;
+  -moz-transition: border .5s linear;
+  -o-transition: border .5s linear;
 
 } 
 
@@ -61,10 +77,19 @@
 	text-align: center;
 }
 
+.sweet-alert.mycustomclass button.cancel {
+  color: red;
+}
 
-/*/////////////////////////////////
+/*---------------------------------
 	Footer
-/////////////////////////////////*/
+---------------------------------*/
+
+
+
+/*---------------------------------
+	Footer
+---------------------------------*/
 
 footer {
 	background:#323233;
@@ -74,5 +99,9 @@ footer {
 
 #swe-flag {
 	display: none;
+}
+.flags {
+	max-width: 10px;
+	max-height: 10px;
 }
 	
