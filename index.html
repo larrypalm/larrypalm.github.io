@@ -52,9 +52,7 @@
 		  <p class="lead"><strong>Aspiring Frontend Developer</strong></p>
 		  <hr class="my-2">
 
-		  <button class="btn" onclick="changeRed()">red</button>
-
-			<div class="btn-group mt-2" role="group" aria-label="Basic example">
+			<div id="formBtn" class="btn-group mt-2" role="group" aria-label="Basic example">
 		  	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Ställ en fråga!</button>
 		  </div>		 
 
@@ -63,12 +61,12 @@
 	<!--/jumbotron-->
 
 	<!--kunskaper-->
-	<div id="skills" class="container pb-3">
+	<div id="skills" class="container ">
 		<div class="row">
 			<!--html-->
 			<div class="col-md-6 col-lg-4">
 				<div class="card">
-				  <img id="html" class="card-img-top img-fluid" src="img/html.png" alt="Card image cap">
+				  <img id="html" class="card-img-top img-fluid mx-auto d-block hideImg" src="img/html1.png" alt="Card image cap">
 				  <hr class="dividers">
 				  <div class="card-block">
 				    <h4 class="card-title">HTML</h4>
@@ -80,7 +78,7 @@
 			<!--CSS-->
 			<div class="col-md-6 col-lg-4">
 				<div class="card">
-				  <img id="css" class="card-img-top img-fluid" src="img/html.png" alt="Card image cap">
+				  <img id="css" class="card-img-top img-fluid mx-auto d-block" src="img/css1.png" alt="Card image cap">
 				  <hr class="dividers">
 				  <div class="card-block">
 				    <h4 class="card-title">CSS</h4>
@@ -91,7 +89,7 @@
 			<!--JavaScript-->
 			<div class="col-md-6 col-lg-4">
 				<div class="card">
-				  <img id="js" class="card-img-top img-fluid" src="img/html.png" alt="Card image cap">
+				  <img id="js" class="card-img-top img-fluid mx-auto d-block" src="img/js1.png" alt="Card image cap">
 				  <hr class="dividers">
 				  <div class="card-block">
 				    <h4 class="card-title">JavaScript</h4>
@@ -99,14 +97,32 @@
 				  </div>
 				</div>
 			</div>
-
+			<!--/JavaScript-->
 		</div>
-		<!--/kunskaper-->
-		<hr>
+	</div>
+	<!--Framtiden-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-4">
+				<div class="card">
+				  <img id="js" class="card-img-top img-fluid mx-auto d-block" src="img/js1.png" alt="Card image cap">
+				  <hr class="dividers">
+				  <div class="card-block">
+				    <h4 class="card-title">Framtiden</h4>
+				    <p class="card-text"> Detta är bara början på komma skall. I denna utbildningen ska vi, förutom dessa tre språk lära oss JSON och AJAX samt lära oss bemästra ramverk som exempelvis Bootstrap. Andra områden som vi kommer djupdyka i är Responsive Web Design och GUI/Interaktionsdesign. Till sist även arbeta med skisser samt mockups. Jag är extremt taggad för framtiden</p>			    
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/Framtiden-->
+	<!--/kunskaper-->
+	
 		<!--Om-->
-		<div id="about"class="container pt-3 text-sm-center">
-			<h1 class="text-sm-center pb-1"><strong>Om Gustav:</strong></h1>
-			<img id="gustav" src="img/gustav.jpg" alt="Gustav" class="rounded-circle" alt="profile picture">
+		<div id="about" class="container pt-3 text-sm-center">
+			<hr>
+			<h1 class="text-sm-center py-1"><strong>Om Gustav:</strong></h1>
+			<img id="gustav" src="img/gustav.jpg" alt="Gustav" class="rounded-circle mx-auto d-block" alt="profile picture">
 			<div class="row py-3">
 				<div class="col-md-6 offset-md-3">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -124,7 +140,7 @@
 		<div id="CV" class="container pb-3">
 			<div class="row">
 				<hr class="pb-3">
-				<h1 class="text-sm-center pb-3">Curriculum vitae:	</h1>
+				<h1 id="CV" class="text-sm-center pb-3">Curriculum vitae:	</h1>
 				<!--utbildning-->
 				<div class="list-group">
 				  <a class="list-group-item list-group-item-action">
@@ -274,7 +290,7 @@
 				<footer class="col-xs-12 pt-3">
 					<a class="flags" id="gb-flag" href="#" onclick="toEnglish()"><img src="img/gb-flag.jpg"></a>
 					<a class="flags" id="swe-flag" href="#" onclick="toSwedish()"><img src="img/swe-flag.png"></a>	
-					<p>© 2016 Gustav Palm</p>
+					<p id="footerText">© 2016 Gustav Palm</p>
 				</footer>
 			</div>
 		</div>

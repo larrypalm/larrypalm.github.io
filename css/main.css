@@ -3,13 +3,29 @@
 	font-size: 10em;
 }
 
+
 @media (max-width: 544px){ 
 
-	#gustavpalm {
-	font-family: 'Bungee Shade', cursive;
+	p   {
+		font-size: 1.2em;
+	}
 
-}
-	
+	#gustavpalm {
+		font-size: 5em;
+		text-align: center;
+	}
+
+	.lead, .about{
+
+		text-align: center;
+
+	}
+
+	.CV {
+		text-align: center;
+
+	}
+
 	#html, #css, #js {
 
 		display: none;
@@ -22,8 +38,20 @@
 
 	}
 
-	.card-title {
+	#formBtn {
+		display: inline-block;
+	}
 
+	.card {
+
+		text-align: center;
+		padding: 10px;
+
+	}
+
+	.card-title {
+		
+		font-size: 2em;
 		text-align: center;
 		padding: 10px;
 
@@ -34,6 +62,9 @@
 		max-height: 100%;
 	}
 
+	#footerText {
+		font-size: 1em;
+	}
 
 }
 /*---------------------------------
