@@ -10,7 +10,7 @@ This is the final projekt done by student Gustav Palm for the course "HTML, CSS,
 	<li>JavaScript: Used to change the language of the </li>
 </ul>
 
-Please bare with me, I'm still learning alot as well as enjoying this alot! Hope you guys enjoy!
+Please bare with me, I'm still learning alot as well as enjoying this alot! Hope you guys enjoy! 
 
 /Gustav
 

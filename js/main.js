@@ -86,7 +86,9 @@ function changeRed() {
 	document.getElementById("gustavpalm").style.color = "red";
 } 
 
-function toEnglish() {	
+function toEnglish() {
+	document.getElementById("qBtn").innerHTML = "Ask a question!";
+
 	document.getElementById("observe").innerHTML = "<strong>Sorry!</strong> This is only a Dummy-form. It doesn't work, yet. I appreciate you've come this far though!";
 	document.getElementById("name").innerHTML = "Name:";
   document.getElementById("lastname").innerHTML = "Lastname:";
@@ -103,6 +105,8 @@ function toEnglish() {
 }
 
 function toSwedish() {
+	document.getElementById("qBtn").innerHTML = "Ställ en fråga!";
+
 	document.getElementById("observe").innerHTML = "<strong>Sorry!</strong> Detta är dessvärre bara en Dummy-formulär. Den fungerar riktigt ännu. Kul att du ändå kom så här långt!";
   document.getElementById("name").innerHTML = "Förnamn:";
   document.getElementById("lastname").innerHTML = "Efternamn:";
@@ -111,7 +115,7 @@ function toSwedish() {
   document.getElementById("send").innerHTML = "Skicka!";
   document.getElementById("cancel").innerHTML = "Avbryt";
 	swal({
-		title: "Språket ändrades till Svenska",
+		title: "Språket har ändrats till Svenska",
 	  confirmButtonColor: "#428bca",
 	  confirmButtonText: "Stäng",
 		closeOnConfirm: true
@@ -121,8 +125,8 @@ function toSwedish() {
 function send(){
 	$("#send").on("click", function(){
 		swal({
-		  title: "Är du säker?",
-		  text: "You will not be able to recover this imaginary file!",
+		  title: "Tack för din fråga!",
+		  text: "Jag ska göra mitt yttersta för att svara på den",
 		  type: "success",
 		  confirmButtonColor: "#428bca",
 		  confirmButtonText: "Stäng",
@@ -135,11 +139,10 @@ function cancel(){
 	$("#cancel").on("click", function(){
 		swal({
 		  title: "Är du säker?",
-		  text: "You will not be able to recover this imaginary file!",
 		  type: "warning",
 		  showCancelButton: true,
 		  confirmButtonColor: "#428bca",
-		  confirmButtonText: "Stäng",
+		  confirmButtonText: "Ja",
 		  cancelButtonText: "Avbryt",
 		  closeOnConfirm: false,
 		  closeOnCancel: false
@@ -147,8 +150,7 @@ function cancel(){
 		function(isConfirm){
 		  if (isConfirm) {
 				swal({
-				  title: "Är du säker?",
-				  text: "You will not be able to recover this imaginary file!",
+				  title: "Ditt meddelande är raderat!",
 				  type: "success",
 				  confirmButtonColor: "#428bca",
 				  confirmButtonText: "Stäng",

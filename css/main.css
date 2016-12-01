@@ -4,68 +4,69 @@
 }
 
 
-@media (max-width: 544px){ 
+@media (max-width: 576px){ 
+
+
+  /*--------------------------------
+  	General Media
+  --------------------------------*/
 
 	p   {
 		font-size: 1.2em;
 	}
+
+	/*--------------------------------
+  	ID:s Media
+  --------------------------------*/
 
 	#gustavpalm {
 		font-size: 5em;
 		text-align: center;
 	}
 
-	.lead, .about{
-
-		text-align: center;
-
-	}
-
-	.CV {
-		text-align: center;
-
-	}
-
 	#html, #css, #js {
-
 		display: none;
-
-	}
-
-	.dividers {
-
-		display: none;
-
 	}
 
 	#formBtn {
 		display: inline-block;
 	}
-
-	.card {
-
-		text-align: center;
-		padding: 10px;
-
+	
+	#footerText {
+		font-size: 1em;
 	}
 
-	.card-title {
-		
+	/*--------------------------------
+  	Classes Media
+  --------------------------------*/
+
+	.lead, .about{
+		text-align: center;
+	}
+
+	.CV {
+		text-align: center;
+	}
+
+	.dividers {
+		display: none;
+	}
+
+	.card {
+		text-align: center;
+		padding: 10px;
+	}
+
+	.card-title {		
 		font-size: 2em;
 		text-align: center;
 		padding: 10px;
-
 	}
 
 	.navbar-toggler {
 		max-width: 100%;
 		max-height: 100%;
 	}
-
-	#footerText {
-		font-size: 1em;
-	}
-
 }
 /*---------------------------------
 	About
