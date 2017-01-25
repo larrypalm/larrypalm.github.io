@@ -20,25 +20,6 @@ var longitude;
     });
   }
 
-  function initUvMap(latitude, longitude) {
-
-    var markerPos = {lat: latitude, lng: longitude};
-    var map = new google.maps.Map(document.getElementById('uvMap'), {
-      zoom: 4,
-      center: markerPos,
-      draggable: false,
-      zoomControl:false,
-      streetViewControl:false,
-      scrollwheel:false
-    });
-    
-    var marker = new google.maps.Marker({
-      position: markerPos,
-      setMap: uvMap,
-
-    });
-  }
-
   //function för att sätta longitude och latitude
   function retLatLng (latitude, longitude) {
   	latitude = latitude;
@@ -352,19 +333,24 @@ $(document).ready(function(){
 	Ozone
 	**********************************/	
 		$("#ozoneSearchBtn").click(function(){
-			var geocodeApi = "https://maps.googleapis.com/maps/api/geocode/json?address=";
+			/*var geocodeApi = "https://maps.googleapis.com/maps/api/geocode/json?address=";
 			var search = $("#ozoneSearchBox").val();
 			var geocodeApiKey = "&key=AIzaSyAuFutnl3HZQLaCVm4KwxBMd8xfPIfVwHg";
+			var geocodeUrl = geocodeApi+search+geocodeApiKey;*/
+			http://api.opencagedata.com/geocode/v1/json?q=london&key=6db87e85e225a82f9eb48bf203df64ae
+			var geocodeApi = "http://api.opencagedata.com/geocode/v1/json?q=";
+			var search = $("#ozoneSearchBox").val();
+			var geocodeApiKey = "&key=6db87e85e225a82f9eb48bf203df64ae";
 			var geocodeUrl = geocodeApi+search+geocodeApiKey;
 			$.getJSON(geocodeUrl , function(data){
-
-				latitude = data.results[0].geometry.location.lat;
+				console.log(geocodeUrl);
+				/*latitude = data.results[0].geometry.location.lat;
 				longitude = data.results[0].geometry.location.lng;
 				var ozoneApi = "http://api.openweathermap.org/pollution/v1/o3/";
 				var latLng = latitude.toFixed() + "," + longitude.toFixed();
 				var timeStamp = "/current.json";
 				var ozoneApiKey = "?appid=ac2a79b6cd5460524fd1766d1c265114";
-				var ozoneUrl = ozoneApi + latLng + timeStamp + ozoneApiKey;
+				var ozoneUrl = ozoneApi + latLng + timeStamp + ozoneApiKey;*/
 
 				$.getJSON(ozoneUrl, function(data){
 					var ozoneIndex = data.data;
