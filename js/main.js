@@ -221,10 +221,10 @@ $(document).ready(function(){
 	$("#uvSearchBtn").click(function(){
 		// Uppbyggnad av "Current UV" api
 		$("ul").fadeIn("fast");
-		var geocodeApi = "https://maps.googleapis.com/maps/api/geocode/json?address=";
+		/*var geocodeApi = "https://maps.googleapis.com/maps/api/geocode/json?address=";
 		var search = $("#uvSearchBox").val();
 		var geocodeApiKey = "&key=AIzaSyAuFutnl3HZQLaCVm4KwxBMd8xfPIfVwHg";
-		var geocodeUrl = geocodeApi+search+geocodeApiKey;
+		var geocodeUrl = geocodeApi+search+geocodeApiKey;*/
 		var uvIndex;
 		var colorCode;
 
@@ -337,13 +337,14 @@ $(document).ready(function(){
 			var search = $("#ozoneSearchBox").val();
 			var geocodeApiKey = "&key=AIzaSyAuFutnl3HZQLaCVm4KwxBMd8xfPIfVwHg";
 			var geocodeUrl = geocodeApi+search+geocodeApiKey;*/
-			http://api.opencagedata.com/geocode/v1/json?q=london&key=6db87e85e225a82f9eb48bf203df64ae
+			//http://api.opencagedata.com/geocode/v1/json?q=london&key=6db87e85e225a82f9eb48bf203df64ae
 			var geocodeApi = "http://api.opencagedata.com/geocode/v1/json?q=";
 			var search = $("#ozoneSearchBox").val();
 			var geocodeApiKey = "&key=6db87e85e225a82f9eb48bf203df64ae";
 			var geocodeUrl = geocodeApi+search+geocodeApiKey;
+			console.log(geocodeUrl);
 			$.getJSON(geocodeUrl , function(data){
-				console.log(geocodeUrl);
+				
 				/*latitude = data.results[0].geometry.location.lat;
 				longitude = data.results[0].geometry.location.lng;
 				var ozoneApi = "http://api.openweathermap.org/pollution/v1/o3/";
